@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 - Product Showcase Card</title>
+<link rel="stylesheet" href="task1.css">
+</head>
+<body>
+<main class="component-container">
+  <article class="product-card">
+    <div class="image-wrap">
+      <span class="badge">Popular</span>
+      <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800" alt="Desk workspace mat on a tidy desk">
+    </div>
+
+    <div class="details">
+      <div class="meta-row">
+        <span>Desk Accessories</span>
+        <span class="rating">4.9 ★</span>
+      </div>
+
+      <div>
+        <h1>Desk Workspace Mat</h1>
+        <p class="desc">A large, soft-touch mat that protects your desk and gives your keyboard and mouse a smooth surface.</p>
+        <ul class="features">
+          <li>Water resistant</li>
+          <li>Non-slip base</li>
+          <li>90 × 40 cm</li>
+          <li>Easy to clean</li>
+        </ul>
+      </div>
+
+      <div class="shelf">
+        <div class="price">₹1,499<small>Tax included</small></div>
+        <button class="add-btn" id="addBtn" type="button">Add to Bag</button>
+      </div>
+      <p class="bag-status" id="bagStatus" aria-live="polite">Items in bag: 0</p>
+    </div>
+  </article>
+</main>
+
+<script src="task1.js"></script>
+</body>
+</html>
