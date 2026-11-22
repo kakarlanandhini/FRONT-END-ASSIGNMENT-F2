@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2 - Responsive Pricing Cards</title>
+<link rel="stylesheet" href="task2.css">
+</head>
+<body>
+<main class="component-container">
+  <h1>Pick a plan</h1>
+
+  <!-- Billing toggle pill -->
+  <div class="toggle" role="group" aria-label="Billing period">
+    <button type="button" class="active" data-period="monthly">Monthly</button>
+    <button type="button" data-period="annual">Annual (save 20%)</button>
+  </div>
+
+  <section class="pricing-grid">
+    <article class="card">
+      <div>
+        <h2>Starter</h2>
+        <div class="price">Free</div>
+        <ul class="features">
+          <li>1 project</li>
+          <li>Community support</li>
+        </ul>
+      </div>
+      <button class="select" type="button">Select Starter</button>
+    </article>
+
+    <article class="card featured">
+      <span class="tag">Popular</span>
+      <div>
+        <h2>Pro Plan</h2>
+        <div class="price">
+          <span class="amount" data-monthly="799" data-annual="639">₹799</span><span class="per">/mo</span>
+        </div>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>Priority support</li>
+          <li>Custom domains</li>
+          <li>Analytics dashboard</li>
+        </ul>
+      </div>
+      <button class="select" type="button">Select Pro</button>
+    </article>
+
+    <article class="card">
+      <div>
+        <h2>Team</h2>
+        <div class="price">
+          <span class="amount" data-monthly="1999" data-annual="1599">₹1,999</span><span class="per">/mo</span>
+        </div>
+        <ul class="features">
+          <li>Everything in Pro</li>
+          <li>10 team seats</li>
+        </ul>
+      </div>
+      <button class="select" type="button">Select Team</button>
+    </article>
+  </section>
+</main>
+
+<script src="task2.js"></script>
+</body>
+</html>
